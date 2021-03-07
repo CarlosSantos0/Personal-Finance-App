@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Personal Finance App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md pb-4">
+            <div class="container-fluid"><img id="logo" class="nav-brand" src="assets/img/iconfinder_growing_2799206.png"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Records</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pending Invoices</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pending Incomes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="account-summary" class="row">
+            <div class="col">
+                <h3>Accounts</h3>
+                <div class="d-flex flex-wrap">
+                    <div class="row" id="account-card">
+                        <div class="col-3 d-flex" id="card-pic"><img class="money-pic" src="assets/img/iconfinder_growing_2799206.png"></div>
+                        <div class="col d-flex flex-column"><span>Banking Account:</span><span class="card-money">40,000$</span></div>
+                    </div>
+                    <div class="row" id="account-card">
+                        <div class="col-3 d-flex" id="card-pic"><img class="money-pic" src="assets/img/iconfinder_growing_2799206.png"></div>
+                        <div class="col d-flex flex-column"><span>Banking Account:</span><span class="card-money">40,000$</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col row flex-column align-content-end justify-content-center"><span class="h4 font-weight-bold">Summary</span><span class="display-4 gray font-weight-bold">500,230 $</span></div>
+        </section>
+        <section id="overview" class="row">
+            <h1 class="overview-title">This Month</h1>
+            <div class="row m-auto justify-content-center">
+                <div class="col-auto card">
+                    <h2 class="card-title">Last Records</h2>
+                    <div class="record-item row"><img class="mr-3" src="assets/img/iconfinder_growing_2799206.png" width="55px">
+                        <div class="row flex-column justify-content-between record-detail"><span class="font-weight-bold h4">Food</span>
+                            <div class="row px-2 align-items-center"><span class="circle"></span><span>Banking Account</span></div>
+                        </div>
+                        <div class="row flex-column record-item-detail text-right"><span class="font-weight-bold h3 text-danger">- 30,000 $</span><span>3 days ago</span></div>
+                    </div>
+                    <div class="record-item row"><img class="mr-3" src="assets/img/iconfinder_growing_2799206.png" width="60px">
+                        <div class="row flex-column justify-content-between record-detail"><span class="font-weight-bold h4">Food</span>
+                            <div class="row px-2 align-items-center"><span class="circle"></span><span>Banking Account</span></div>
+                        </div>
+                        <div class="row flex-column record-item-detail text-right"><span class="font-weight-bold h3 text-danger">- 30,000 $</span><span>3 days ago</span></div>
+                    </div>
+                </div>
+                <div class="col-auto card">
+                    <h2 class="card-title">Pending Balance</h2>
+                    <div class="row flex-column mb-3"><span class="h4 font-weight-bold my-2">Pending Incomes</span><span class="h1 text-success font-weight-bold">420,000 $</span></div>
+                    <div class="row flex-column mb-3"><span class="h4 font-weight-bold my-2">Pending Invoices</span><span class="h1 text-danger font-weight-bold">- 420,000 $</span></div>
+                    <div class="row flex-column mt-5 text-center pending-balance-summary" style="border-top-style: solid;border-top-color: rgb(0,0,0);"><span class="h4 font-weight-bold my-3">Pending Invoices</span><span class="h1 text-success font-weight-bold">100,000 $</span></div>
+                </div>
+                <div class="col-auto card">
+                    <h2 class="card-title">Cash Flow</h2>
+                    <div><canvas data-bss-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Revenue&quot;,&quot;backgroundColor&quot;:&quot;#4e73df&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                    <div><canvas data-bss-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Revenue&quot;,&quot;backgroundColor&quot;:&quot;#4e73df&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>

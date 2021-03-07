@@ -1,0 +1,147 @@
+#logo {
+  width: 70px;
+}
+
+#money-pic {
+}
+
+.money-pic {
+  width: 67px;
+  align-self: center;
+}
+
+#card-pic {
+}
+
+.card-money {
+  align-self: flex-end;
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#account-card {
+  color: #ffffff;
+  width: 245px;
+  background-color: var(--primary);
+  border-radius: 15px;
+  padding: 9px 0px;
+  margin-right: 44px;
+}
+
+#account-summary {
+  padding: 25px 41px;
+}
+
+@media (max-width: 750px) {
+  #account-card {
+    margin: 12px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  #account-card {
+    width: 421px;
+  }
+}
+
+#overview {
+  background-color: #ecf0f1;
+  padding: 18px 0px;
+  flex-direction: column;
+}
+
+.overview-title {
+  background: #ffffff;
+  padding: 9px 44px;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+.navbar {
+  border-bottom: 2px solid;
+}
+
+.card {
+  padding: 34px 52px;
+  border-radius: 60px;
+  margin-top: 25px;
+  margin-left: 16px;
+}
+
+.card-title {
+  border-bottom: 3px solid #000000;
+  padding-bottom: 19px;
+}
+
+.record-item-title {
+}
+
+.circle {
+  background-color: blue;
+  width: 14px;
+  height: 14px;
+  border-radius: 91px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+record-item-detail {
+}
+
+.row.record-detail {
+  margin-right: 58px;
+}
+
+.record-item {
+  padding: 23px 0px;
+}
+
+@media (max-width: 395px) {
+  .card {
+    font-size: 10px;
+  }
+}
+
+.chart-1 {
+  width: 164px;
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.btn-record {
+  border-radius: 18px;
+  font-size: 16px;
+}
+
+.record-summary {
+  background-color: #ecf0f1;
+}
+
+.record-filter {
+  background-color: #ffffff;
+  border-radius: 19px;
+  padding: 33px;
+}
+
+.record-item-detail {
+  background-color: #ffffff;
+  border-radius: 24px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .select-time {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .select-time > * {
+    margin-bottom: 8px;
+  }
+}
+
